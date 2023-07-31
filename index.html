@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400;1,500;1,600&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Academics</a></li>
+                        <li><a href="">Research</a></li>
+                        <li><a href="">Campus</a></li>
+                        <li><a href="">Student Services</a></li>
+                        <li><a href="">Admission</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Kristu Jayanti College : Autonomous</h1>
+                <p>Kristu Jayanti College expands its horizons for the students <br> to experience Intellectual excellence and a diversity of culture,</p>
+                <a href="" class="hero-btn">BROWSE</a>
+            </div>
+        </section>
+        <!---NEWLY ADDED--->
+        <section class="NewlyAdded">
+            <h1>Newly Added</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nihil omnis suscipit autem, aperiam, id reiciendis facilis ut totam placeat optio! Repudiandae eveniet sint consectetur officia dolorum itaque odio laudantium?</p>
+            <div class="row">
+                <div class="games-col">
+                    <h3>Computer Science</h3>
+                    <p>All the computer sciene department courses</p>
+                </div>
+                <div class="games-col">
+                    <h3>Management</h3>
+                    <p>All the management department courses</p>
+                </div>
+                <div class="games-col">
+                    <h3>Medical</h3>
+                    <p>All the life science department courses</p>
+                </div>
+            </div>
+
+        </section>
+    <!---JavaScript for Toggle Menu--->    
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>    
+    </body>
+</html>
